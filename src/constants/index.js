@@ -20,6 +20,11 @@ export const navBarList = [
     title: "Home",
     link: "/",
   },
+  {
+    _id: 1002,
+    title: "Cart",
+    link: "/cart",
+  },
 
   {
     _id: 1004,
