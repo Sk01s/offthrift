@@ -4,6 +4,7 @@ import Product from "../Products/Product";
 import { paginationItems } from "../../../constants/index";
 
 const BestSellers = () => {
+  console.log(paginationItems[0]);
   return (
     <div className="w-full pb-20">
       <Heading heading="Our Bestsellers" />
@@ -16,6 +17,8 @@ const BestSellers = () => {
             price={product.price}
             badge={product.badge}
             des={product.des}
+            condition={product.condition}
+            size={product.size}
           />
         ))}
       </div>

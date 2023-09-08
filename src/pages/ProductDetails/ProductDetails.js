@@ -15,7 +15,7 @@ const ProductDetails = () => {
   useEffect(() => {
     setProductInfo(location.state.item);
     setPrevLocation(location.pathname);
-    console.log(productInfo);
+    console.log(location.state.item);
   }, [location, productInfo]);
 
   const togggle = (index, array) => {

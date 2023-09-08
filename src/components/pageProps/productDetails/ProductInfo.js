@@ -9,6 +9,10 @@ const ProductInfo = ({ productInfo }) => {
     <div className="flex flex-col gap-5">
       <h2 className="text-4xl font-semibold">{productInfo.productName}</h2>
       <p className="text-xl font-semibold">${productInfo.price}</p>
+      <p className="text-base text-gray-600 ">
+        Conditon: {productInfo.condition} / 10
+      </p>
+      <p className="text-base text-gray-600 ">Size: {productInfo.size}</p>
       <p className="text-base text-gray-600">{productInfo.des}</p>
 
       <button
@@ -48,10 +52,6 @@ const ProductInfo = ({ productInfo }) => {
       >
         Buy Now
       </button>
-      <p className="font-normal text-sm">
-        <span className="text-base font-medium"> Categories:</span> Spring
-        collection, Streetwear, Women Tags: featured SKU: N/A
-      </p>
     </div>
   );
 };
