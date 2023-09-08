@@ -59,7 +59,7 @@ const ProductDetails = () => {
                     ref={(e) => (buttonEl.current[index] = e)}
                     onMouseEnter={() => showImage(index)}
                     onTouchStart={() => showImage(index)}
-                    className={` z-50 absolute bottom-[-1.4rem] left-[36%] w-4 h-4 rounded-full border-primeColor border-solid border-2 duration-200  transition-all`}
+                    className={` z-30 absolute bottom-[-1.4rem] left-[36%] w-4 h-4 rounded-full border-primeColor border-solid border-2 duration-200  transition-all`}
                     style={{ translate: `${index * 1.5}rem` }}
                   ></button>
                 </>
