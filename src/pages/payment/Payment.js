@@ -119,7 +119,7 @@ const Payment = () => {
           <h1 className="font-titleFont font-semibold text-3xl">
             Fill up a Form
           </h1>
-          <div className="w-[500px] h-auto py-6 flex flex-col gap-6">
+          <div className="w-[500px] max-w-[95vw] h-auto py-6 flex flex-col gap-6">
             <div>
               <label
                 htmlFor="name"
