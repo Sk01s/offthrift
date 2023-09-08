@@ -88,7 +88,7 @@ const Payment = () => {
       street
     ) {
       setSuccessMsg(
-        `Thank you dear ${clientName}, Your messages has been received successfully. Futher details will sent to you by your email at ${email}.`
+        `Thank you dear ${clientName}, Your Order has been received successfully. Futher details will sent to you by your email at ${email}. and Payment when you resive the the order `
       );
     }
   };
