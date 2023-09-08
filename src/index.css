@@ -31,4 +31,11 @@ nav .active li {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+button.active {
+  background-color: black;
+}
+img.active {
+  z-index: 40;
+  background-size: 105%;
+}
 /* ============= NavLink active End here ================ */

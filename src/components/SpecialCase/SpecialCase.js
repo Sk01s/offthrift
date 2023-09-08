@@ -4,7 +4,7 @@ import { RiShoppingCart2Fill } from "react-icons/ri";
 import { useSelector } from "react-redux";
 
 const SpecialCase = () => {
-  const products = useSelector((state) => state.orebiReducer.products);
+  const products = useSelector((state) => state.offthriftReducer.products);
   return (
     <div className="fixed top-52 right-2 z-20 hidden md:flex flex-col gap-2">
       <Link to="/cart">
