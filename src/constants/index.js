@@ -89,7 +89,6 @@ export const paginationItems = [
     img: [
       productThreeImg1,
       productThreeImg2,
-      productThreeImg3,
       productThreeImg4,
       productThreeImg5,
     ],
@@ -122,7 +121,6 @@ export const paginationItems = [
     img: [
       productFiveImg1,
       productFiveImg2,
-      productFiveImg3,
       productFiveImg4,
       productFiveImg5,
       productFiveImg6,
@@ -139,12 +137,10 @@ export const paginationItems = [
     img: [
       productSixImg1,
       productSixImg2,
-      productSixImg3,
       productSixImg4,
       productSixImg5,
       productSixImg6,
       productSixImg7,
-      productSixImg8,
     ],
     productName: "Nike Levron James 16 WTL limted edtion ",
     price: "900.00",

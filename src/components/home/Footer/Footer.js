@@ -32,8 +32,9 @@ const Footer = () => {
           <FooterListTitle title=" More about Offthrift Shop" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              The Place for your best shoes with best materials for your own
-              foot
+              Ready to step into more thrift treasures? Discover our wide
+              selection of affordable and stylish thrift shoes in our
+              collection.
             </p>
             <ul className="flex items-center gap-2">
               <a href="https://instagram.com" target="_blank" rel="noreferrer">

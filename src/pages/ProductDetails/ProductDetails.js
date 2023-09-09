@@ -34,6 +34,7 @@ const ProductDetails = () => {
     togggle(index, ImagesEl.current);
     togggle(index, buttonEl.current);
   };
+  console.log(productInfo.img?.slice(2));
   return (
     <div className="w-full mx-auto border-b-[1px] border-b-gray-300">
       <div className="max-w-container mx-auto px-4">
@@ -45,7 +46,7 @@ const ProductDetails = () => {
             <ProductsOnSale />
           </div>
           <div className="xl:h-[80vh] h-[60vh] mb-5 xl:col-span-2  relative ">
-            {productInfo?.img?.map((img, index) => {
+            {productInfo.img?.slice(2).map((img, index) => {
               return (
                 <>
                   <img
