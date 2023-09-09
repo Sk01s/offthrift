@@ -41,6 +41,7 @@ import productSevenImg3 from "./products/productSeven/productSevenImg3.jpg";
 import productSevenImg4 from "./products/productSeven/productSevenImg4.jpg";
 import productSevenImg5 from "./products/productSeven/productSevenImg5.jpg";
 import productSevenImg6 from "./products/productSeven/productSevenImg6.jpg";
+import productSevenImg7 from "./products/productSeven/productSevenImg7.jpg";
 
 // ============== Products End here ======================
 import paymentCard from "./payment.png";
@@ -101,6 +102,7 @@ export {
   productSevenImg4,
   productSevenImg5,
   productSevenImg6,
+  productSevenImg7,
 
   // ===================== Products End here ==============
   paymentCard,

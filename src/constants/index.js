@@ -33,6 +33,7 @@ import {
   productSevenImg4,
   productSevenImg5,
   productSevenImg6,
+  productSevenImg7,
 } from "../assets/images/index";
 
 // =================== NavBarList Start here ====================
@@ -153,6 +154,7 @@ export const paginationItems = [
       productSevenImg4,
       productSevenImg5,
       productSevenImg6,
+      productSevenImg7,
     ],
     productName: "Valentino Granvani",
     price: "1200.00",
