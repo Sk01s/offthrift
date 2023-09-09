@@ -45,7 +45,7 @@ const ProductDetails = () => {
           <div className="h-full">
             <ProductsOnSale />
           </div>
-          <div className="xl:h-[80vh] h-[60vh] mb-5 xl:col-span-2  relative ">
+          <div className="xl:h-[80vh] h-[60vh] mb-12 xl:col-span-2  relative ">
             {productInfo.img?.slice(2).map((img, index) => {
               return (
                 <>
@@ -60,9 +60,11 @@ const ProductDetails = () => {
                     ref={(e) => (buttonEl.current[index] = e)}
                     onMouseEnter={() => showImage(index)}
                     onTouchStart={() => showImage(index)}
-                    className={` z-30 absolute bottom-[-1.4rem] left-[36%] w-4 h-4 rounded-full border-primeColor border-solid border-2 duration-200  transition-all`}
-                    style={{ translate: `${index * 1.5}rem` }}
-                  ></button>
+                    className={` z-30 absolute -bottom-14 left-2 w-12 h-12  duration-200  transition-all overflow-hidden rounded-md`}
+                    style={{ translate: `${index * 4}rem` }}
+                  >
+                    <img src={img} alt="product img" />
+                  </button>
                 </>
               );
             })}

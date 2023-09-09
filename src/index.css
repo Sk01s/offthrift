@@ -32,7 +32,8 @@ nav .active li {
   display: none;
 }
 button.active {
-  background-color: black;
+  border: solid 2px #333;
+  box-shadow: 1px 1px 10px #727272;
 }
 img.active {
   z-index: 40;
