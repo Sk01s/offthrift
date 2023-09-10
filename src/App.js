@@ -1,4 +1,3 @@
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -34,7 +33,7 @@ const Layout = () => {
       <Footer />
       <FooterBottom />
       {!accepeted && (
-        <div className="sticky bottom-0 bg-gray-100 flex flex-col items-center gap-2 text-zinc-600">
+        <div className="sticky bottom-0 bg-black flex flex-col items-center gap-2 text-white z-40 p-2">
           <div>
             We use cookies to ensure you have the best browsing experience on
             our website. By using our site, you acknowledge that you have read
@@ -44,7 +43,7 @@ const Layout = () => {
             </Link>
           </div>
           <button
-            className="bg-primeColor text-white text-lg font-bodyFont w-fit px-2 h-[50px] hover:bg-black duration-300 font-bold"
+            className="bg-primeColor text-white text-lg font-bodyFont w-fit px-2 h-[50px] hover:bg-white duration-300 font-bold hover:text-primeColor"
             onClick={() => {
               localStorage.setItem("terms", true);
               setAccepeted(true);
@@ -77,7 +76,6 @@ const router = createBrowserRouter(
 );
 
 function App() {
-
   return (
     <div className="font-bodyFont">
       <RouterProvider router={router} />
