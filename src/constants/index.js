@@ -78,7 +78,7 @@ export const valuedItems = [
       productSixImg6,
       productSixImg7,
     ],
-    productName: "Nike Lebron James 16 WTL limted edtion ",
+    productName: "Nike Lebron James 16 WTL limited edtion ",
     price: "140.00",
     badge: true,
     size: 40,
@@ -188,7 +188,7 @@ export const productsData = [
       productSixImg6,
       productSixImg7,
     ],
-    productName: "Nike Lebron James 16 WTL limted edtion ",
+    productName: "Nike Lebron James 16 WTL limited edtion ",
     price: "140.00",
     badge: true,
     size: 40,
@@ -211,10 +211,7 @@ export const productsData = [
     badge: true,
     size: 41,
     condition: 9.5,
-    des: `Sneakers open skate Leather White Green 
-     Closure: Lace Up Closure 
-     Made in italy 
-      Heel heigh `,
+    des: `Closure: Lace up Closure  Made in: Italy Heel height: Low and  Product code: S0F89YPB6TX `,
   },
   {
     _id: 107,
@@ -241,7 +238,7 @@ export const productsData = [
       productNineImg3,
       productNineImg4,
     ],
-    productName: "Nike Lunarglide 9 blur",
+    productName: "Nike Lunarglide 9",
     price: "42.00",
     badge: true,
     size: 41,

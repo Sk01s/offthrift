@@ -71,9 +71,14 @@ const CompleteOrder = () => {
           </h3>
 
           <div className="border-solid border-[#eee] border-2  p-2 w-[30rem] max-w-[90vw]">
-            {orderDetails.city} {"  "}
-            {orderDetails.street} {"  "}
-            {orderDetails.nearBy} {orderDetails.building} {orderDetails.floor}
+            {orderDetails.city} {" , "}
+            {orderDetails.street} {" , "}
+            {orderDetails.nearBy} {" , "}
+            {orderDetails.building} {" , "} {orderDetails.floor}
+            {parseInt(orderDetails.floor) === 1 && "st"}
+            {parseInt(orderDetails.floor) === 2 && "nd"}
+            {parseInt(orderDetails.floor) === 3 && "ed"}
+            {parseInt(orderDetails.floor) > 3 && "th"} floor
           </div>
           <div className="flex flex-col gap-5 mt-6 ">
             <h3 className="text-xl font-semibold ml-1">Items</h3>
