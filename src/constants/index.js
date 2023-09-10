@@ -34,6 +34,14 @@ import {
   productSevenImg5,
   productSevenImg6,
   productSevenImg7,
+  productEightImg1,
+  productEightImg2,
+  productEightImg3,
+  productEightImg4,
+  productNineImg1,
+  productNineImg2,
+  productNineImg3,
+  productNineImg4,
 } from "../assets/images/index";
 
 // =================== NavBarList Start here ====================
@@ -57,9 +65,51 @@ export const navBarList = [
 ];
 // =================== NavBarList End here ======================
 
-// =================== PaginationItems Start here ===============
+// =================== PaginationItems Valued items Start here ===============
 
-export const paginationItems = [
+export const valuedItems = [
+  {
+    _id: 105,
+    img: [
+      productSixImg1,
+      productSixImg2,
+      productSixImg4,
+      productSixImg5,
+      productSixImg6,
+      productSixImg7,
+    ],
+    productName: "Nike Lebron James 16 WTL limted edtion ",
+    price: "140.00",
+    badge: true,
+    size: 40,
+    condition: 10,
+    des: "",
+  },
+  {
+    _id: 106,
+    img: [
+      productSevenImg1,
+      productSevenImg2,
+      productSevenImg3,
+      productSevenImg4,
+      productSevenImg5,
+      productSevenImg6,
+      productSevenImg7,
+    ],
+    productName: "Valentino Garavani",
+    price: "399.00",
+    badge: true,
+    size: 41,
+    condition: 9.5,
+    des: `Sneakers open skate Leather White Green 
+     Closure: Lace Up Closure 
+     Made in italy 
+      Heel heigh `,
+  },
+];
+// =================== productsData Start here ===============
+
+export const productsData = [
   {
     _id: 100,
     img: [productOneImg1, productOneImg2, productOneImg3, productOneImg4],
@@ -122,7 +172,7 @@ export const paginationItems = [
       productFiveImg6,
     ],
     productName: "Nike AF1 full white ",
-    price: "300.00",
+    price: "39.00",
     badge: true,
     size: 40,
     condition: 8.5,
@@ -138,7 +188,7 @@ export const paginationItems = [
       productSixImg6,
       productSixImg7,
     ],
-    productName: "Nike Levron James 16 WTL limted edtion ",
+    productName: "Nike Lebron James 16 WTL limted edtion ",
     price: "140.00",
     badge: true,
     size: 40,
@@ -156,7 +206,7 @@ export const paginationItems = [
       productSevenImg6,
       productSevenImg7,
     ],
-    productName: "Valentino Granvani",
+    productName: "Valentino Garavani",
     price: "399.00",
     badge: true,
     size: 41,
@@ -166,5 +216,40 @@ export const paginationItems = [
      Made in italy 
       Heel heigh `,
   },
+  {
+    _id: 107,
+    img: [
+      productEightImg1,
+      "",
+      productEightImg2,
+      productEightImg3,
+      productEightImg4,
+    ],
+    productName: "Adidas Alphabounce Full white",
+    price: "34.00",
+    badge: true,
+    size: 40.5,
+    condition: 8.5,
+    des: ` `,
+  },
+  {
+    _id: 108,
+    img: [
+      productNineImg1,
+      "",
+      productNineImg2,
+      productNineImg3,
+      productNineImg4,
+    ],
+    productName: "Nike Lunarglide 9 blur",
+    price: "42.00",
+    badge: true,
+    size: 41,
+    condition: 9.5,
+    des: `Sneakers open skate Leather White Green 
+     Closure: Lace Up Closure 
+     Made in italy 
+      Heel heigh `,
+  },
 ];
-// =================== PaginationItems End here =================
+// =================== productsData End here =================

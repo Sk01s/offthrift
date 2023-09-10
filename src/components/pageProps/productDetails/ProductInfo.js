@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/offthriftSlice";
 import { useNavigate } from "react-router-dom";
 const ProductInfo = ({ productInfo }) => {
+  console.log(productInfo._id);
   const history = useNavigate();
   const dispatch = useDispatch();
   return (
@@ -19,13 +20,12 @@ const ProductInfo = ({ productInfo }) => {
         onClick={() =>
           dispatch(
             addToCart({
-              _id: productInfo.id,
+              _id: productInfo._id,
               name: productInfo.productName,
               quantity: 1,
               image: productInfo.img,
               badge: productInfo.badge,
               price: productInfo.price,
-              colors: productInfo.color,
             })
           )
         }
@@ -37,13 +37,12 @@ const ProductInfo = ({ productInfo }) => {
         onClick={() => {
           dispatch(
             addToCart({
-              _id: productInfo.id,
+              _id: productInfo._id,
               name: productInfo.productName,
               quantity: 1,
               image: productInfo.img,
               badge: productInfo.badge,
               price: productInfo.price,
-              colors: productInfo.color,
             })
           );
           history("/cart");

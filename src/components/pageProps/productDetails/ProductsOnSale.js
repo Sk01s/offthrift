@@ -1,5 +1,5 @@
 import React from "react";
-import { paginationItems } from "../../../constants";
+import { valuedItems } from "../../../constants";
 import { useNavigate } from "react-router-dom";
 
 const ProductsOnSale = () => {
@@ -11,10 +11,10 @@ const ProductsOnSale = () => {
   return (
     <div>
       <h3 className="font-titleFont text-xl font-semibold mb-6 underline underline-offset-4 decoration-[1px]">
-        Products on sale
+        Valued items
       </h3>
       <div className="flex flex-col gap-2">
-        {paginationItems.slice(4).map((item) => (
+        {valuedItems.map((item) => (
           <div
             onClick={() => {
               navigate(`/product/${idString(item._id)}`, {

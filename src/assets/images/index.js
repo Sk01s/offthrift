@@ -42,6 +42,14 @@ import productSevenImg4 from "./products/productSeven/productSevenImg4.jpg";
 import productSevenImg5 from "./products/productSeven/productSevenImg5.jpg";
 import productSevenImg6 from "./products/productSeven/productSevenImg6.jpg";
 import productSevenImg7 from "./products/productSeven/productSevenImg7.jpg";
+import productEightImg1 from "./products/productEight/productEightImg1.jpg";
+import productEightImg2 from "./products/productEight/productEightImg2.jpg";
+import productEightImg3 from "./products/productEight/productEightImg3.jpg";
+import productEightImg4 from "./products/productEight/productEightImg4.jpg";
+import productNineImg1 from "./products/productNine/productNineImg1.jpg";
+import productNineImg2 from "./products/productNine/productNineImg2.jpg";
+import productNineImg3 from "./products/productNine/productNineImg3.jpg";
+import productNineImg4 from "./products/productNine/productNineImg4.jpg";
 
 // ============== Products End here ======================
 import paymentCard from "./payment.png";
@@ -104,6 +112,17 @@ export {
   productSevenImg6,
   productSevenImg7,
 
+  // Product Eight
+  productEightImg1,
+  productEightImg2,
+  productEightImg3,
+  productEightImg4,
+
+  // Product Nine
+  productNineImg1,
+  productNineImg2,
+  productNineImg3,
+  productNineImg4,
   // ===================== Products End here ==============
   paymentCard,
   emptyCart,

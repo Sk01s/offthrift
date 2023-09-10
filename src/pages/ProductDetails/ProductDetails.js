@@ -39,9 +39,6 @@ const ProductDetails = () => {
           <Breadcrumbs title="" prevLocation={prevLocation} />
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 pb-10 bg-gray-100 p-4">
-          <div className="h-full">
-            <ProductsOnSale />
-          </div>
           <div className="xl:h-[80vh] h-[60vh] mb-12 xl:col-span-2  relative ">
             {productInfo.img?.slice(2).map((img, index) => {
               return (
@@ -68,6 +65,9 @@ const ProductDetails = () => {
           </div>
           <div className="h-full w-full md:col-span-2 xl:col-span-3 xl:p-14 flex flex-col gap-6 justify-center">
             <ProductInfo productInfo={productInfo} />
+          </div>
+          <div className="h-full">
+            <ProductsOnSale />
           </div>
         </div>
       </div>

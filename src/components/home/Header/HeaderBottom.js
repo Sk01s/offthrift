@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import Flex from "../../designLayouts/Flex";
 import { useNavigate } from "react-router-dom";
-import { paginationItems } from "../../../constants";
+import { productsData } from "../../../constants";
 
 const HeaderBottom = () => {
   const [show, setShow] = useState(false);
@@ -28,7 +28,7 @@ const HeaderBottom = () => {
   };
 
   useEffect(() => {
-    const filtered = paginationItems.filter((item) =>
+    const filtered = productsData.filter((item) =>
       item.productName.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredProducts(filtered);

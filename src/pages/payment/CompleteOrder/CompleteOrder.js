@@ -71,26 +71,9 @@ const CompleteOrder = () => {
           </h3>
 
           <div className="border-solid border-[#eee] border-2  p-2 w-[30rem] max-w-[90vw]">
-            <p className="text-md mb-6 text-gray-500">
-              <span className="text-primeColor">City : </span>
-              {orderDetails.city}
-            </p>
-            <p className="text-md mb-6 text-gray-500">
-              <span className="text-primeColor">Street : </span>
-              {orderDetails.street}
-            </p>
-            <p className="text-md mb-6 text-gray-500">
-              <span className="text-primeColor">Near By : </span>
-              {orderDetails.nearBy}
-            </p>
-            <p className="text-md mb-6 text-gray-500">
-              <span className="text-primeColor">Building : </span>
-              {orderDetails.building}
-            </p>
-            <p className="text-md  text-gray-500">
-              <span className="text-primeColor">Floor : </span>
-              {orderDetails.floor}
-            </p>
+            {orderDetails.city} {"  "}
+            {orderDetails.street} {"  "}
+            {orderDetails.nearBy} {orderDetails.building} {orderDetails.floor}
           </div>
           <div className="flex flex-col gap-5 mt-6 ">
             <h3 className="text-xl font-semibold ml-1">Items</h3>
@@ -100,7 +83,7 @@ const CompleteOrder = () => {
               </div>
             ))}
           </div>
-          <h3 className="text-xl font-semibold ml-1">Pyment</h3>
+          <h3 className="text-xl font-semibold ml-1">Pyament</h3>
           <p className="text-sm text-gray-600 mb-2">
             All transactions are secure and encrypted
           </p>

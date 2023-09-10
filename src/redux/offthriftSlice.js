@@ -22,11 +22,11 @@ export const offthriftSlice = createSlice({
       state.address = action.payload;
     },
     addToCart: (state, action) => {
+      console.log(action.payload);
       const item = state.products.find(
         (item) => item._id === action.payload._id
       );
-      if (item) {;
-      } else {
+      if (!item) {
         state.products.push(action.payload);
       }
     },

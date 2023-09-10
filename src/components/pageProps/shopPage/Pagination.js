@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import Product from "../../home/Products/Product";
-import { paginationItems } from "../../../constants";
+import { productsData } from "../../../constants";
 
-const items = paginationItems;
+const items = productsData;
 function Items({ currentItems }) {
   return (
     <>
