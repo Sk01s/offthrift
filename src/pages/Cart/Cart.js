@@ -32,8 +32,8 @@ const Cart = () => {
             <h2>Sub Total</h2>
           </div>
           <div className="mt-5">
-            {products.map((item) => (
-              <div key={item._id}>
+            {products.map((item, index) => (
+              <div key={index}>
                 <ItemCard item={item} />
               </div>
             ))}
@@ -83,7 +83,7 @@ const Cart = () => {
                 </p>
               </div>
               <div className="flex justify-end">
-                <Link to="/paymentgateway">
+                <Link to="/information" state={products}>
                   <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
                     Proceed to Checkout
                   </button>

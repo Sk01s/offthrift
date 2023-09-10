@@ -113,7 +113,6 @@ const Payment = () => {
               )
               .then((e) => console.log(e))
               .catch((e) => console.log(e));
-            console.log(e.target.name);
           }}
         >
           <h1 className="font-titleFont font-semibold text-3xl">

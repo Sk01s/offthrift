@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, applyMiddleware } from "@reduxjs/toolkit";
 import {
   persistStore,
   persistReducer,
@@ -21,6 +21,8 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, offthriftReducer);
 
 export const store = configureStore({
+
+
   reducer: { offthriftReducer: persistedReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

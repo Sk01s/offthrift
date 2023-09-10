@@ -15,12 +15,10 @@ const ProductDetails = () => {
   useEffect(() => {
     setProductInfo(location.state.item);
     setPrevLocation(location.pathname);
-    console.log(location.state.item);
   }, [location, productInfo]);
 
   const togggle = (index, array) => {
     return array.map((element, i) => {
-      console.log(element.classList);
       if (i === index) {
         element.classList.add("active");
       } else {
@@ -34,7 +32,6 @@ const ProductDetails = () => {
     togggle(index, ImagesEl.current);
     togggle(index, buttonEl.current);
   };
-  console.log(productInfo.img?.slice(2));
   return (
     <div className="w-full mx-auto border-b-[1px] border-b-gray-300">
       <div className="max-w-container mx-auto px-4">
@@ -48,7 +45,7 @@ const ProductDetails = () => {
           <div className="xl:h-[80vh] h-[60vh] mb-12 xl:col-span-2  relative ">
             {productInfo.img?.slice(2).map((img, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   <img
                     draggable="false"
                     ref={(e) => (ImagesEl.current[index] = e)}
@@ -65,7 +62,7 @@ const ProductDetails = () => {
                   >
                     <img src={img} alt="product img" />
                   </button>
-                </>
+                </React.Fragment>
               );
             })}
           </div>

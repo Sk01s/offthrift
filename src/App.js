@@ -1,3 +1,4 @@
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,10 +16,11 @@ import SpecialCase from "./components/SpecialCase/SpecialCase";
 import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
-import Payment from "./pages/payment/Payment";
+import Information from "./pages/payment/Information";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
 import Terms from "./pages/Terms/Terms";
+import CompleteOrder from "./pages/payment/CompleteOrder/CompleteOrder";
 import { useState } from "react";
 const Layout = () => {
   const [accepeted, setAccepeted] = useState(localStorage.getItem("terms"));
@@ -67,13 +69,15 @@ const router = createBrowserRouter(
         {/* ==================== Header Navlink End here ===================== */}
         <Route path="/product/:_id" element={<ProductDetails />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/paymentgateway" element={<Payment />}></Route>
+        <Route path="/information" element={<Information />}></Route>
+        <Route path="/completepayment" element={<CompleteOrder />}></Route>
       </Route>
     </Route>
   )
 );
 
 function App() {
+
   return (
     <div className="font-bodyFont">
       <RouterProvider router={router} />

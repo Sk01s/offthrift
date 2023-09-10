@@ -3,18 +3,29 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   userInfo: [],
   products: [],
+  address: {
+    firstName: "",
+    lastName: "",
+    city: "",
+    phoneNumber: 0,
+    email: "",
+    street: "",
+    nearBy: "",
+  },
 };
 
 export const offthriftSlice = createSlice({
   name: "Offthrift",
   initialState,
   reducers: {
+    addAddress: (state, action) => {
+      state.address = action.payload;
+    },
     addToCart: (state, action) => {
       const item = state.products.find(
         (item) => item._id === action.payload._id
       );
-      if (item) {
-        item.quantity += action.payload.quantity;
+      if (item) {;
       } else {
         state.products.push(action.payload);
       }
@@ -49,6 +60,7 @@ export const offthriftSlice = createSlice({
 });
 
 export const {
+  addAddress,
   addToCart,
   increaseQuantity,
   drecreaseQuantity,
