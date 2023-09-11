@@ -37,7 +37,11 @@ const Footer = () => {
               collection.
             </p>
             <ul className="flex items-center gap-2">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/offthriftlb/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaInstagram />
                 </li>
