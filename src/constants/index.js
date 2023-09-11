@@ -211,7 +211,7 @@ export const productsData = [
     badge: true,
     size: 41,
     condition: 9.5,
-    des: `Closure: Lace up Closure  Made in: Italy Heel height: Low and  Product code: S0F89YPB6TX `,
+    des: `Closure: Lace up Closure  Made in: Italy Heel height: Low and flat Product code: S0F89YPB6TX `,
   },
   {
     _id: 107,
@@ -243,10 +243,7 @@ export const productsData = [
     badge: true,
     size: 41,
     condition: 9.5,
-    des: `Sneakers open skate Leather White Green 
-     Closure: Lace Up Closure 
-     Made in italy 
-      Heel heigh `,
+    des: ` `,
   },
 ];
 // =================== productsData End here =================
